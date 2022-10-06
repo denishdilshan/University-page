@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DD University</title>
+    
+    <link rel="stylesheet" type="text/css" herf="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.footer {
+    background-color: gray;
+}
+.top {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("welcom.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    display: flex;
+    width: 600px;
+    position: absolute;
+    right: 400px;
+    top: 0px;
+    bottom: 50px;
+
+    
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    width: 500px;
+     
+
+    
+
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    column-rule: 0ch;
+}
+
+.nav-links ul li a{
+    color: rgb(54, 57, 228);
+    text-decoration: none;
+    text-shadow: 10px;
+    font-size: 25px;
+
+}
+
+.nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: rgb(255, 7, 7);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.textbox {
+    width: 90%;
+    color:rgb(5, 13, 119);
+    background-color: rgba(66, 123, 228, 0.452);
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.textbox h1 {
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
+}
+
+.textbox p {
+    margin: 10px 0 40px;
+    font-size: 30px;
+    color: rgb(243, 243, 243);
+    font-family: 'Anton', sans-serif;
+
+
+}
+
+.href {
+    display: inline-block;
+    text-decoration: none;
+    color: azure;
+    border: 1px solid white;
+    margin: 20px;
+    padding: 15px 35px ;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.href:hover {
+    border: 1px solid darkblue;
+    background: darkblue;
+
+}
+
+.menu {
+    width: 99%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(111, 225, 233);
+
+}
+
+.menu h1 {
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Anton', sans-serif;
+
+
+}
+
+.menu p {
+    color: rgb(13, 15, 143);
+    font-size: 18px;
+    font-weight: 300;
+    padding: 10px;
+ 
+}
+
+.menu img {
+    width: 200px;
+    height: 200px;
+
+}
+
+.row {
+    display: flex;justify-content: space-between;
+}
+
+
+.menu-col {
+    flex-basis: 30%;
+    background-color: rgb(127, 127, 245);
+    border-radius: 50px;
+    margin-bottom: 0%;
+    padding: 0px 0px;
+    box-sizing: border-box;
+    
+}
+
+.menu-col p {
+ color: black;
+ font-size: 19px;
+}
+
+.menu-col:hover {
+    border: 1px solid rgb(53, 53, 231);
+    background: rgb(64, 64, 209);
+}
+.headtext {
+    font-size: 30px;
+    text-align: center;
+    background-color: darkgray;
+    color: rgb(15, 48, 236);
+}
+.noticehead {
+    text-align: center;
+    margin: 100px auto;
+    max-width: 550px;
+    position: relative;
+    font-size: 20px;
+}
+.noticehead::before {
+    background-color: red;
+    display: block;
+    width: 650px;
+    height: 5px;
+    content: "";
+    position: absolute;
+    left: -455px;
+    top: 50%;
+    z-index: -1;
+}
+.noticehead::after {
+    background-color: red;
+    display: block;
+    width: 650px;
+    height: 5px;
+    content: "";
+    position: absolute;
+    right: -455px;
+    top: 50%;
+    z-index: -1;
+}
+
+
+.note {
+    position: absolute;
+    text-align: left;
+    left: 50px;
+    bottom: -1000px;
+    color: blueviolet;
+    
+    
+
+    
+
+}
+
+.h3 {
+    color: black;
+    position: absolute;
+    left: 50px;
+
+
+}
+.footer {
+    top: 2000px;
+    position: absolute;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+body {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container {
+    max-width: 1170px;
+    margin: auto;
+
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+ul {
+    list-style: none;
+}
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+    width: 100%;
+}
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block; 
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.foot-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.foot-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+     
+}
+/*responsive*/
+@media(max-width: 767px){
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+
+    }
+}
+@media(max-width: 574px){
+    .foot-col {
+        width: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+    <section class="top">
+        <nav>
+            <a href="university.html">
+            <div class="nav-links">
+                    
+                 <ul>
+                     <li><a href="#home">HOME</a></li>
+                     <li><a href="#academic">ACADEMIC</a></li>
+                      <li><a href="#administration">ADMINISTRATION</a></li>
+                      <li><a href="#Courses">COURSES</a></li>
+                      <li><a href="#library">CONTACT</a></li>
+                      <li><a href="#notice">NOTICES</a></li>
+                    
+                
+                    </ul>
+            
+            </div>
+        </nav>
+         <div class="headtext">
+             <h1>DD University</h1>
+
+         </div>
+
+        <div class="textbox">
+            <h1>INTERNATIONAL STUDY </h1>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+            <p>“Experience your way to the top. Turn your talent into your future.”</p>
+            <a class="href" href="">Find your course</a>
+  
+
+        </div>
+
+    </section>
+     
+
+    <section class="menu">
+        <h1>COURSES</h1>
+        <p>"You’ll find a diverse and welcoming environment at Birmingham City University. We’re a modern and dynamic international university"</p>
+
+        <div class="row">
+            <div class="menu-col">
+                <h2>UNDERGRADUATE STUDY</h2>
+                <a href="ddcafe.html"><img src="ph11.jpg"  alt="Image not loaded"></a>
+                <p>View our full range of undergraduate courses open to international students.</p>
+            </div>
+            <div class="menu-col">
+                <h2>POSTGRADUATE</h2>
+                <a href="ddcafe.html"><img src="ph2.jpg"  alt="Image not loaded"></a>
+                <p>View our full range of postgraduate courses open to international students.</p>
+
+
+            </div>
+
+            <div class="menu-col">
+                <h2>INTERNATIONAL SCHOLARSHIPS</h2>
+                <a href="ddcafe.html"><img src="ph3.jpg"  alt="Image not loaded"></a>
+                <p>We offer a range of undergraduate and postgraduate scholarships.</p>
+                </div>
+    </section>
+
+            
+            
+
+            <section class="menu">
+
+
+                <div class="row">
+                    <div class="menu-col">
+                        <h2>ENTRY REQUIREMENTS</h2>
+                        <a href="ddcafe.html"><img src="ph4.jpg"  alt="Image not loaded"></a>
+                        <p>Find out the basic entry requirements you need to study at DD </p>
+                    </div>
+
+                    <div class="menu-col">
+                        <h2>ACCOMMODATION</h2>
+                        <a href="ddcafe.html"><img src="ph5.jpg"  alt="Image not loaded"></a>
+                        <p>Once you've received an offer from us, you can apply for accommodation.</p>
+        
+        
+                    </div>
+                    <div class="menu-col">
+                        <h2>OURBRANCHES</h2>
+                        <a href="ddcafe.html"><img src="ph6.jpg"  alt="Image not loaded"></a>
+                        <p>We have representatives across the world, find an agent in your home town.</p>
+                        
+                    
+                    </div>
+                </section>
+
+        <section class="notice">
+            <div class="noticehead">
+                <h1>Information</h1>
+
+            </div>
+
+            <div class="note">
+               <u> <h1>*NOTICE</h1></u>
+               </div>
+               <div class="h3">
+               <h3>Appilication for Bse program.</h3>
+               <p>Those who have passed GCE(/L) or those who have qualified with Advanced Certificate in Science (OUSL) can apply for the programme online.</p>
+              <br>
+               <h3>Opportunities for overseas students.</h3>
+               <p>Fields: Engineering, Medical, Management, Social science, Natural science,.</p>
+            </div>
+
+            
+ 
+             </div>
+ 
+
+        </section>
+
+        
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>university</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Books</a></li>
+                        <li><a href="#">Lecture details</a></li>
+                        <li><a href="#">Course codes</a></li>
+                        <li><a href="#">payments</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online</h4>
+                    <ul>
+                        <li><a href="#">LMS</a></li>
+                        <li><a href="#">Teams group</a></li>
+                        <li><a href="#">videos</a></li>
+                        <li><a href="#">soft copies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                    <ul>
+                        <li><a href="#">FACEBOOK</a></li>
+                        <li><a href="#">TWITTER</a></li>
+                        <li><a href="#">INSTAGRAM</a></li>
+                        <li><a href="#">LINKD-IN</a></li>
+                        
+                    </ul>
+                        </div>
+
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+    </footer>
+
+</body> 
+
+    </body>
+</html>

@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.footer {
+    background-color: gray;
+}
+.top {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("welcom.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    display: flex;
+    width: 600px;
+    position: absolute;
+    right: 400px;
+    top: 0px;
+    bottom: 50px;
+
+    
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    width: 500px;
+     
+
+    
+
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    column-rule: 0ch;
+}
+
+.nav-links ul li a{
+    color: rgb(54, 57, 228);
+    text-decoration: none;
+    text-shadow: 10px;
+    font-size: 25px;
+
+}
+
+.nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: rgb(255, 7, 7);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.textbox {
+    width: 90%;
+    color:rgb(5, 13, 119);
+    background-color: rgba(66, 123, 228, 0.452);
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.textbox h1 {
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
+}
+
+.textbox p {
+    margin: 10px 0 40px;
+    font-size: 30px;
+    color: rgb(243, 243, 243);
+    font-family: 'Anton', sans-serif;
+
+
+}
+
+.href {
+    display: inline-block;
+    text-decoration: none;
+    color: azure;
+    border: 1px solid white;
+    margin: 20px;
+    padding: 15px 35px ;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.href:hover {
+    border: 1px solid darkblue;
+    background: darkblue;
+
+}
+
+.menu {
+    width: 99%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(111, 225, 233);
+
+}
+
+.menu h1 {
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Anton', sans-serif;
+
+
+}
+
+.menu p {
+    color: rgb(13, 15, 143);
+    font-size: 18px;
+    font-weight: 300;
+    padding: 10px;
+ 
+}
+
+.menu img {
+    width: 200px;
+    height: 200px;
+
+}
+
+.row {
+    display: flex;justify-content: space-between;
+}
+
+
+.menu-col {
+    flex-basis: 30%;
+    background-color: rgb(127, 127, 245);
+    border-radius: 50px;
+    margin-bottom: 0%;
+    padding: 0px 0px;
+    box-sizing: border-box;
+    
+}
+
+.menu-col p {
+ color: black;
+ font-size: 19px;
+}
+
+.menu-col:hover {
+    border: 1px solid rgb(53, 53, 231);
+    background: rgb(64, 64, 209);
+}
+.headtext {
+    font-size: 30px;
+    text-align: center;
+    background-color: darkgray;
+    color: rgb(15, 48, 236);
+}
+.noticehead {
+    text-align: center;
+    margin: 100px auto;
+    max-width: 550px;
+    position: relative;
+    font-size: 20px;
+}
+.noticehead::before {
+    background-color: red;
+    display: block;
+    width: 650px;
+    height: 5px;
+    content: "";
+    position: absolute;
+    left: -455px;
+    top: 50%;
+    z-index: -1;
+}
+.noticehead::after {
+    background-color: red;
+    display: block;
+    width: 650px;
+    height: 5px;
+    content: "";
+    position: absolute;
+    right: -455px;
+    top: 50%;
+    z-index: -1;
+}
+
+
+.note {
+    position: absolute;
+    text-align: left;
+    left: 50px;
+    bottom: -1000px;
+    color: blueviolet;
+    
+    
+
+    
+
+}
+
+.h3 {
+    color: black;
+    position: absolute;
+    left: 50px;
+
+
+}
+.footer {
+    top: 2000px;
+    position: absolute;
+}
